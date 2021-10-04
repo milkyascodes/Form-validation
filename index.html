@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Form Validation | Vanilla JS ✅</title>
+</head>
+<body>
+
+    <div class="container">
+        <h3>Form Validation <small></small></h3>
+        <br>
+        <form id="form">
+            <div class="row">
+              <div class="u-full-width">
+                <label for="name">Your name</label>
+                <input class="u-full-width " type="text" id="name">
+                <small class="err">Name must be 2-10 characters</small>
+                
+              </div>
+              <div class="u-full-width">
+                
+                <label for="email">Your email</label>
+                <input class="u-full-width" type="text"  id="email">
+                <small class="err">Your email is invalid</small>
+              </div>
+              
+              <label for="message">Message</label>
+              <textarea class="u-full-width" id="message"></textarea>
+              <small class="err">Message must be 2 characters or more</small>
+            </div>
+    
+            <br>
+            <input class="button-primary" type="submit" value="Submit" id="btn">
+        </form>
+
+    </div>
+
+
+
+    <footer>
+      Form Validation / Js <br>
+      100 day challenge &copy; Miki
+
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
