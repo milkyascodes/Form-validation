@@ -1,0 +1,68 @@
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.container {
+  max-width: 500px;
+}
+h3 {
+  letter-spacing: 2px;
+  width: max-content;
+}
+h3.error small {
+  background: red;
+}
+h3.success small {
+  background: #90ee90;
+}
+h3 small {
+  font-size: 12px;
+  color: #fff;
+  padding: 3px 5px;
+  border-radius: 50px;
+}
+input,
+textarea {
+  margin-bottom: 2px;
+}
+label {
+  margin-top: 6px;
+}
+input.invalid,
+textarea.invalid {
+  border-color: red;
+}
+input.valid,
+textarea.valid {
+  border-color: #adff2f;
+}
+.err {
+  opacity: 0;
+  color: red;
+  font-size: 12px;
+  position: relative;
+}
+input.invalid + .err,
+textarea.invalid + .err {
+  opacity: 1;
+  animation: err 0.7s ease forwards;
+}
+footer {
+  text-align: center;
+  font-size: 11px;
+  position: fixed;
+  bottom: 20px;
+  color: #aaa;
+}
+@keyframes err {
+  from {
+    left: -10px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
